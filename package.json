@@ -1,8 +1,31 @@
 {
-  "name": "wizardsatwork.github.io",
+  "name": "wizardsatwork.at",
   "version": "0.23.5",
-  "author": "Wizards & Witches",
+  "scripts": {
+    "start": "t -p",
+    "format": "f -w",
+    "test": "t",
+    "build": "NODE_ENV=production magic build",
+    "prod": "NODE_ENV=production magic build serve",
+    "dev": "magic dev",
+    "publish": "magic publish",
+    "connect": "magic connect"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wizardsatwork/wizardsatwork.at.git"
+  },
+  "keywords": [],
+  "author": "Jascha Ehrenreich",
   "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/wizardsatwork/wizardsatwork.at/issues"
+  },
+  "homepage": "https://github.com/wizardsatwork/wizardsatwork.at#readme",
+  "devDependencies": {
+    "@magic/core": "github:magic/core",
+    "@magic/test": "0.0.7"
+  },
   "contributors": [
     {
       "name": "jascha ehrenreich",
@@ -28,23 +51,5 @@
       "name": "daniel safar",
       "github": "n1c3"
     }
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/wizardsatwork/wizardsatwork.at.git"
-  },
-  "scripts": {
-    "start": "mspg build serve watch",
-    "build": "NODE_ENV=production mspg build zip",
-    "prod": "NODE_ENV=production mspg build zip serve",
-    "clean": "rm -rf public",
-    "lint:css": "mspg lint css",
-    "lint:html": "mspg lint html",
-    "publish": "NODE_ENV=production mspg build zip publish"
-  },
-  "devDependencies": {
-    "@mspg/core": "github:mspg/core",
-    "@mspg/transpile-posthtml": "github:mspg/transpile-posthtml",
-    "@mspg/transpile-stylus": "github:mspg/transpile-stylus"
-  }
+  ]
 }
