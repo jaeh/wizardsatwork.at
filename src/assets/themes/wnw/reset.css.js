@@ -38,4 +38,7 @@ module.exports = {
     padding: 0,
     verticalAlign: 'baseline',
   },
+  ul: {
+    listStyle: 'none',
+  },
 }

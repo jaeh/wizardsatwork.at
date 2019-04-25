@@ -1,15 +1,16 @@
-module.exports = () =>
+const state = {
+  lang: 'de',
+}
+
+const View = () =>
   div({ class: 'impressum section' }, [
     LanguageSwitch,
-    div({ class: 'block' }, h2([Link({ to: '/' }, WNWLogo)])),
+    div({ class: 'block' }, h2([Link({ to: '/de/' }, WNWLogo)])),
     p([
-      'we are a tribe of makers, ',
-      'programmers, engineers, philosophers, ',
-      'activists, hackers, artists, clowns, and scientists.',
+      'wir sind ein stamm von erfindern, programmierern, philosophen,',
+      ' aktivisten, hackern, künstlern, clowns und wissenschaftlern.',
     ]),
-
-    p('we are wizards and witches at work, '),
-    p('magically shifting paradigms.'),
+    p('wir sind zauberer und hexen bei der arbeit, unsere magie transformiert paradigmen.'),
 
     div({ class: 'block' }, [
       h2('Impressum'),
@@ -29,6 +30,11 @@ module.exports = () =>
         span('Email: '),
         a({ href: 'mailto:office@wizardsatwork.at' }, 'office@wizardsatwork.at'),
       ]),
-      p('Member of WKÖ and WKW'),
+      p('Mitglied der WKÖ, WKW'),
     ]),
   ])
+
+module.exports = {
+  state,
+  View,
+}

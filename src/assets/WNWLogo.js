@@ -167,7 +167,7 @@ WNWLogo.style = vars => ({
       stopColor: vars.fill_1,
     },
     'stop[offset="1"]': {
-      stopColor: vars.fill_3,
+      stopColor: vars.fill_2,
     },
   },
 

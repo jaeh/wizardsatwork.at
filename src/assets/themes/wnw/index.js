@@ -25,7 +25,7 @@ const theme = vars => ({
     ].join(','),
     fontSize: '15px',
     lineHeight: '1.2',
-    maxWidth: '1200px',
+    maxWidth: vars.maxWidth,
     margin: '0 auto',
   },
   'h1, h2': {
@@ -302,7 +302,7 @@ const theme = vars => ({
 
   '@media (min-width: 1100px)': {
     body: {
-      fontSize: '17px',
+      fontSize: '16px',
     },
 
     '#magic': {

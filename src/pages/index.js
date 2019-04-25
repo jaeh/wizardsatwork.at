@@ -1,5 +1,6 @@
 module.exports = {
   View: (state, actions) => [
+    LanguageSwitch,
     div({ class: 'kickstarter' }, [
       Link({ to: 'https://www.kickstarter.com/projects/evocell/evocell/' }, [
         img({ src: '/img/kickstarter.jpg', alt: 'support us on kickstarter' }),
