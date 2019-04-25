@@ -3,18 +3,12 @@ module.exports = {
     boxSizing: 'border-box',
   },
 
-  body: {
-    minHeight: '100vh',
-  },
-
   '#magic': {
     margin: '1em auto 0',
     width: '90%',
   },
 
   '.page': {
-    minHeight: '90vh',
-
     header: {
       margin: '0 0 .5em',
     },

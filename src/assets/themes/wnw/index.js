@@ -11,8 +11,18 @@ const theme = vars => ({
 
   body: {
     color: vars.textColor,
-    fontFamily:
-      '"Ubuntu Condensed",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif',
+    fontFamily: [
+      '"Ubuntu Condensed"',
+      '-apple-system',
+      'BlinkMacSystemFont',
+      '"Segoe UI"',
+      'Roboto',
+      'Oxygen-Sans',
+      'Ubuntu',
+      'Cantarell',
+      '"Helvetica Neue"',
+      'sans-serif',
+    ].join(','),
     fontSize: '15px',
     lineHeight: '1.2',
     maxWidth: '1200px',
@@ -131,6 +141,7 @@ const theme = vars => ({
     padding: '0 0 1em',
     color: vars.subtleColor,
     textAlign: 'center',
+    margin: '2em 0 0',
   },
 
   // utilities
@@ -212,7 +223,7 @@ const theme = vars => ({
     animationTimingFunction: 'ease-out',
   },
 
-  '@media (min-width: 400px)': {
+  '@media (min-width: 400px) and (max-width: 799px)': {
     body: {
       fontSize: '18px',
     },
@@ -246,6 +257,11 @@ const theme = vars => ({
 
     'footer.main': {
       textAlign: 'left',
+      position: 'fixed',
+      left: '5px',
+      bottom: '5px',
+      top: 'auto',
+      padding: 0,
     },
 
     '.hex': {
