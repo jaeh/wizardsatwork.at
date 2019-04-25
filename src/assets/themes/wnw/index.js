@@ -298,7 +298,13 @@ const theme = vars => ({
 
   '@media (min-width: 1100px)': {
     body: {
-      fontSize: '16px',
+      fontSize: '17px',
+
+      '.section': {
+        '.impressum': {
+          fontSize: '16px',
+        },
+      },
     },
 
     '#magic': {
