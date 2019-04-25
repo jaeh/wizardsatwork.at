@@ -3,8 +3,8 @@
   "version": "0.23.5",
   "scripts": {
     "start": "t -p",
-    "format": "f -w",
-    "test": "t",
+    "format": "f -w --exclude docs",
+    "test": "t --exclude docs",
     "build": "NODE_ENV=production magic build",
     "prod": "NODE_ENV=production magic build serve",
     "dev": "magic dev",
@@ -24,7 +24,7 @@
   "homepage": "https://github.com/wizardsatwork/wizardsatwork.at#readme",
   "devDependencies": {
     "@magic/core": "github:magic/core",
-    "@magic/test": "0.0.7"
+    "@magic/test": "0.0.10"
   },
   "contributors": [
     {
@@ -51,5 +51,8 @@
       "name": "daniel safar",
       "github": "n1c3"
     }
-  ]
+  ],
+  "dependencies": {
+    "@magic-modules/languageswitch": "github:magic-modules/languageswitch"
+  }
 }
