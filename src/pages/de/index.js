@@ -56,10 +56,10 @@ const View = (state, actions) => [
       Hex,
       div({ class: 'hex__content annotated' }, [
         p('wir sind ein stamm von '),
-        p('erfindern, programmierern'),
-        p('ingeneuren, philosophen'),
-        p('aktivisten, hackern, künstlern'),
-        p('clowns und wissenschafltern,'),
+        p('erfindern, programmierern,'),
+        p('ingeneuren, philosophen,'),
+        p('aktivisten, hackern, künstlern,'),
+        p('clowns und wissenschaftlern.'),
 
         h2([p('wir sind hexen und'), p('zauberer bei der arbeit.')]),
 
