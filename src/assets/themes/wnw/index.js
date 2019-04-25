@@ -149,10 +149,6 @@ const theme = vars => ({
     margin: '2em 0',
   },
 
-  '.kickstarter': {
-    margin: '4em auto 0',
-    maxWidth: '90%',
-  },
   '.hex__container': {
     position: 'relative',
   },
