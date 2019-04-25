@@ -1,8 +1,8 @@
 module.exports = {
   state: {
     languages: [
-      { text: 'english', to: '/', lang: 'en' },
-      { text: 'deutsch', to: '/de/', lang: 'de' },
+      { text: 'english', to: '/', code: 'en' },
+      { text: 'deutsch', to: '/de/', code: 'de' },
     ],
   },
 }
