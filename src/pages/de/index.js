@@ -4,11 +4,7 @@ const state = {
 
 const View = (state, actions) => [
   LanguageSwitch,
-  div({ class: 'kickstarter' }, [
-    Link({ to: 'https://www.kickstarter.com/projects/evocell/evocell/' }, [
-      img({ src: '/img/kickstarter.jpg', alt: 'support us on kickstarter' }),
-    ]),
-  ]),
+  KickStarter,
 
   div({ class: 'hex__container' }, [
     div({ class: 'hex hero' }, [Hex, WNWLogo]),
@@ -65,10 +61,7 @@ const View = (state, actions) => [
         p('aktivisten, hackern, künstlern'),
         p('clowns und wissenschafltern,'),
 
-        h2([
-          p('wir sind hexen und'),
-          p('zauberer bei der arbeit.'),
-        ]),
+        h2([p('wir sind hexen und'), p('zauberer bei der arbeit.')]),
 
         Link({ to: '/de/impressum/' }, 'impressum'),
       ]),
