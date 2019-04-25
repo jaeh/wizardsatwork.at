@@ -14,11 +14,10 @@ module.exports = {
         div({ class: 'hex__content' }, [
           img({ src: '/img/evocell.png', alt: 'EvoCell' }),
           p([
-            span('EvoCell is a game engine based on the evolutionary cycles of cellular automata.'),
-            span(
-              { class: 'add' },
-              ' Games can be published as ios, android web, and desktop apps.',
-            ),
+            span('EvoCell is a single- and multi-player space adventure'),
+            span({ class: 'add' }, ' in a living universe'),
+            span({ class: 'add' }, ' created with a graphical game editor that is '),
+            span(' based on cellular automata.'),
           ]),
           Link(
             {

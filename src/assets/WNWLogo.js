@@ -1,7 +1,6 @@
-
 const WNWLogo = (state, actions) =>
-div({ id: 'hero', class: "hex__content" }, [
-  svg(
+  div({ id: 'hero', class: 'hex__content' }, [
+    svg(
       {
         id: 'hat',
         class: `anim${state.logoAnimated ? ' animated' : ''}`,
@@ -88,11 +87,11 @@ div({ id: 'hero', class: "hex__content" }, [
       ],
     ),
 
-    h1({ class: "anim" }, 'WIZARDS @ WORK'),
+    h1({ class: 'anim' }, 'WIZARDS @ WORK'),
     h2([
-      span({ class: "anim" }, 'magically'),
-      span({ class: "anim" }, ' shifting'),
-      span({ class: "anim" }, ' paradigms'),
+      span({ class: 'anim' }, 'magically'),
+      span({ class: 'anim' }, ' shifting'),
+      span({ class: 'anim' }, ' paradigms'),
     ]),
   ])
 

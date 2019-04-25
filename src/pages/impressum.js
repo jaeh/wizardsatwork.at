@@ -1,11 +1,6 @@
 module.exports = () =>
-  div({ class: "impressum section" }, [
-    div(
-      { class: "block" },
-      h2([
-        Link({ to: '/' }, WNWLogo)
-      ]),
-    ),
+  div({ class: 'impressum section' }, [
+    div({ class: 'block' }, h2([Link({ to: '/' }, WNWLogo)])),
     p([
       'we are a tribe of makers, ',
       'programmers, engineers, philosophers, ',
@@ -15,7 +10,7 @@ module.exports = () =>
     p('we are wizards and witches at work, '),
     p('magically shifting paradigms.'),
 
-    div({ class: "block" }, [
+    div({ class: 'block' }, [
       h2('Impressum'),
 
       h3('Wizards at Work GmbH'),
