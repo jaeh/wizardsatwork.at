@@ -14,7 +14,7 @@ const View = (state, actions) => [
       div({ class: 'hex__content' }, [
         img({ src: '/img/evocell.png', alt: 'EvoCell' }),
         p([
-          span('EvoCell ist ein Einzel- und Mehrspieler Abenteuer in einem'),
+          span('EvoCell ist ein Abenteuer in einem'),
           span({ class: 'add' }, [
             ' auf zellulären Automaten basierenden',
             ' und mit einem graphischen Spieleeditor erschaffenen',
