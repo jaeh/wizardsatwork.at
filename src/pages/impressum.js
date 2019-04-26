@@ -20,7 +20,7 @@ module.exports = () =>
       p('we are wizards and witches at work.'),
     ]),
 
-    div({ class: 'block' }, [
+    div({ class: 'content' }, [
       h2('Impressum'),
 
       h3('Wizards at Work GmbH'),

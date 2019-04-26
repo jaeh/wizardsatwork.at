@@ -22,7 +22,7 @@ const View = () =>
       p('wir sind zauberer und hexen bei der arbeit.'),
     ]),
 
-    div({ class: 'block' }, [
+    div({ class: 'content' }, [
       h2('Impressum'),
 
       h3('Wizards at Work GmbH'),
