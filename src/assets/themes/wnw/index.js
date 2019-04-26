@@ -53,10 +53,6 @@ const theme = vars => ({
     animationTimingFunction: 'linear',
   },
 
-  '.add': {
-    display: 'none',
-  },
-
   a: {
     color: vars.textColor,
     textDecoration: 'none',
@@ -224,6 +220,10 @@ const theme = vars => ({
     animationTimingFunction: 'ease-out',
   },
 
+  '.add': {
+    display: 'none',
+  },
+
   '@media (min-width: 400px) and (max-width: 799px)': {
     body: {
       fontSize: '18px',
@@ -252,14 +252,14 @@ const theme = vars => ({
       },
     },
 
+    '.add': {
+      display: 'none',
+    },
+
     '#magic': {
       margin: '5em auto 0',
       width: '800px',
       position: 'relative',
-    },
-
-    '.add': {
-      display: 'none',
     },
 
     '.kickstarter': {
@@ -322,6 +322,10 @@ const theme = vars => ({
       },
     },
 
+    '.add': {
+      display: 'inherit',
+    },
+
     '#magic': {
       margin: '1em auto 0',
       width: '1100px',
@@ -347,6 +351,10 @@ const theme = vars => ({
       '&.about': {
         top: '400px',
         margin: '0 0 0 -200px',
+
+        '.hex__content.annotated h2': {
+          margin: '1em 0',
+        },
       },
 
       '&.hexpaper': {

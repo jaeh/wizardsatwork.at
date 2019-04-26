@@ -14,9 +14,11 @@ const View = (state, actions) => [
       div({ class: 'hex__content' }, [
         img({ src: '/img/evocell.png', alt: 'EvoCell' }),
         p([
-          span('EvoCell ist ein Abenteuer in einem'),
-          span({ class: 'add' }, [
+          span([
+            'EvoCell ist ein Abenteuer in einem',
             ' auf zellulären Automaten basierenden',
+          ]),
+          span({ class: 'add' }, [
             ' und mit einem graphischen Spieleeditor erschaffenen',
           ]),
           span(' lebenden Universum'),
@@ -36,10 +38,7 @@ const View = (state, actions) => [
       div({ class: 'hex__content' }, [
         Link({ to: 'https://magicshifter.net' }, [
           img({ src: '/img/magicshifter.png', alt: 'MagicShifter' }),
-          p([
-            span('Der MagicShifter 3000 ist eine open source hardware,'),
-            span({ class: 'add' }, ' für Licht-, Spiel- und Illusions-Magie.'),
-          ]),
+          p('Der MagicShifter 3000 ist ein open source Zauberstab für Lichtmagie.'),
         ]),
 
         Link(
