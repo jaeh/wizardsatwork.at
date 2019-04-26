@@ -235,6 +235,15 @@ const theme = vars => ({
   '@media (min-width: 800px)': {
     body: {
       fontSize: '15px',
+
+      '.section': {
+        '&.impressum': {
+          '#hat': {
+            float: 'left',
+            margin: '0 2em 0 0',
+          },
+        },
+      },
     },
 
     '#magic': {
@@ -301,7 +310,7 @@ const theme = vars => ({
       fontSize: '17px',
 
       '.section': {
-        '.impressum': {
+        '&.impressum': {
           fontSize: '16px',
         },
       },
