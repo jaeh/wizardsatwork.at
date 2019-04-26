@@ -110,8 +110,13 @@ const theme = vars => ({
     width: '80%',
     minWidth: '250px',
 
+    '.content': {
+      clear: 'both',
+    },
+
     '#hat': {
       width: '30%',
+      margin: '0 0 2em',
     },
   },
 
@@ -223,6 +228,7 @@ const theme = vars => ({
     body: {
       fontSize: '18px',
     },
+
     '.hex': {
       '.hex__content.annotated': {
         h2: {
@@ -240,7 +246,7 @@ const theme = vars => ({
         '&.impressum': {
           '#hat': {
             float: 'left',
-            margin: '0 2em 0 0',
+            margin: '0 2em 2em 0',
           },
         },
       },
@@ -307,7 +313,7 @@ const theme = vars => ({
 
   '@media (min-width: 1100px)': {
     body: {
-      fontSize: '17px',
+      fontSize: '18px',
 
       '.section': {
         '&.impressum': {
