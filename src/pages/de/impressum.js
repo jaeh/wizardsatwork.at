@@ -5,12 +5,22 @@ const state = {
 const View = () =>
   div({ class: 'impressum section' }, [
     LanguageSwitch,
-    div({ class: 'block' }, h2([Link({ to: '/de/' }, WNWLogo)])),
-    p([
-      'wir sind ein stamm von erfindern, programmierern, philosophen,',
-      ' aktivisten, hackern, künstlern, clowns und wissenschaftlern.',
+    Link({ to: '/de/' }, Hat),
+
+    div({ class: 'slogan' }, [
+      h1({ class: 'anim' }, 'WIZARDS @ WORK'),
+      h2([
+        span({ class: 'anim' }, 'magisch'),
+        span({ class: 'anim' }, ' verwandelte'),
+        span({ class: 'anim' }, ' paradigmen'),
+      ]),
+
+      p([
+        'wir sind ein stamm von erfindern, programmierern, philosophen,',
+        ' aktivisten, hackern, künstlern, clowns und wissenschaftlern.',
+      ]),
+      p('wir sind zauberer und hexen bei der arbeit.'),
     ]),
-    p('wir sind zauberer und hexen bei der arbeit, unsere magie transformiert paradigmen.'),
 
     div({ class: 'block' }, [
       h2('Impressum'),

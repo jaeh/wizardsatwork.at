@@ -1,15 +1,24 @@
 module.exports = () =>
   div({ class: 'impressum section' }, [
     LanguageSwitch,
-    div({ class: 'block' }, h2([Link({ to: '/' }, WNWLogo)])),
-    p([
-      'we are a tribe of makers, ',
-      'programmers, engineers, philosophers, ',
-      'activists, hackers, artists, clowns, and scientists.',
-    ]),
+    Link({ to: '/de/' }, Hat),
 
-    p('we are wizards and witches at work, '),
-    p('magically shifting paradigms.'),
+    div({ class: 'slogan' }, [
+      h1({ class: 'anim' }, 'WIZARDS @ WORK'),
+      h2([
+        span({ class: 'anim' }, 'magically'),
+        span({ class: 'anim' }, ' shifting'),
+        span({ class: 'anim' }, ' paradigms'),
+      ]),
+
+      p([
+        'we are a tribe of makers, ',
+        'programmers, engineers, philosophers, ',
+        'activists, hackers, artists, clowns, and scientists.',
+      ]),
+
+      p('we are wizards and witches at work.'),
+    ]),
 
     div({ class: 'block' }, [
       h2('Impressum'),
